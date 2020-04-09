@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+def config = rootProject.ext.android
+def library = rootProject.ext.supportDependencies
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -33,4 +36,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':commonlibrary')
     implementation project(path: ':bluetoothlibrary')
+
+
 }
