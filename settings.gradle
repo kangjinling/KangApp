@@ -1,0 +1,3 @@
+rootProject.name='KangApp'
+include ':app'
+include ':commonlibrary'
