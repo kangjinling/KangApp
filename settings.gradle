@@ -1,3 +1,5 @@
 rootProject.name='KangApp'
 include ':app'
 include ':commonlibrary'
+include ':bluetoothlibrary'
+include ':httpslibrary'

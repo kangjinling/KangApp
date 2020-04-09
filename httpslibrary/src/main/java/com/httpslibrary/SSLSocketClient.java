@@ -1,4 +1,4 @@
-package common.library.https;
+package com.httpslibrary;
 
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
