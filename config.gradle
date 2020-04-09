@@ -16,12 +16,15 @@ ext{
     ////库依赖
     supportDependencies = [
 
+            "design_29":  "com.android.support:design:29.0.0",
+
             //okhttp依赖okio
             "okio": 'com.squareup.okio:okio:1.14.0',
-            "okhttp": 'com.squareup.okhttp3:okhttp:3.10.0',
-            "retrofit": 'com.squareup.retrofit2:retrofit:2.4.0',
+            "okhttp": 'com.squareup.okhttp3:okhttp:4.5.0',
+            "retrofit": 'com.squareup.retrofit2:retrofit:2.8.1',
             "convertergson": 'com.squareup.retrofit2:converter-gson:2.4.0',
-            "gson": 'com.google.code.gson:gson:2.8.5',
+            "gson": 'com.google.code.gson:gson:2.8.6',
+            // 生命周期状态
             "extensions": 'android.arch.lifecycle:extensions:1.1.1',
             "reactivestreams": 'android.arch.lifecycle:reactivestreams:1.1.1',
 

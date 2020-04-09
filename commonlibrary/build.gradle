@@ -1,14 +1,18 @@
 apply plugin: 'com.android.library'
 
+
+def config = rootProject.ext.android
+def library = rootProject.ext.supportDependencies
+
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -27,6 +31,10 @@ android {
         }
     }
 
+    dataBinding{
+        enabled true
+    }
+
 }
 
 dependencies {
@@ -36,6 +44,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation library.extensions
+    implementation library.reactivestreams
+    
+    implementation library.eventbus
+    api project(path: ':alimaplibrary')
 
 
 }

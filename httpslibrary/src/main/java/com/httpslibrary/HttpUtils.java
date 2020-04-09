@@ -4,7 +4,7 @@ package com.httpslibrary;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import common.library.utils.LogPrint;
+import common.library.LogPrint;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

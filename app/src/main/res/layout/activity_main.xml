@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.kang.app.viewModel.MainViewModel" />
+    </data>
+
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,10 +18,24 @@
     tools:context=".MainActivity">
 
 
-    <Button
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/colors_00b7ff"
+        app:tabTextColor="@color/colors_a4b4c1"
+        >
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        ></Button>
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
 
 
 </LinearLayout>
+
+</layout>
